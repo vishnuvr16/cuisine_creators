@@ -1,51 +1,51 @@
-const backendDomin = `${process.env.REACT_APP_BACKEND_URL}` || "http://localhost:8000";
+const backendDomain = `${process.env.REACT_APP_BACKEND_URL}` || "http://localhost:8000";
 
 const SummaryApi = {
   register: {
-    url: `${backendDomin}/api/users/register`,
+    url: `${backendDomain}/api/users/register`,
     method: "post",
   },
   login: {
-    url: `${backendDomin}/api/users/login`,
+    url: `${backendDomain}/api/users/login`,
     method: "post"
   },
   logout: {
-    url: `${backendDomin}/api/users/logout`,
+    url: `${backendDomain}/api/users/logout`,
     method: "post"
   },
   profile:{
-    url: `${backendDomin}/api/users/profile`,
+    url: `${backendDomain}/api/users/profile`,
     method: "get"
   },
   update_profile: {
-    url: `${backendDomin}/api/users/update-profile`,
+    url: `${backendDomain}/api/users/update-profile`,
     method: "patch"
   },
   getVideos: {
-    url: `${backendDomin}/api/videos`,
+    url: `${backendDomain}/api/videos`,
     method: "get"
   },
   trendingVideos: {
-    url: `${backendDomin}/api/videos/trending`,
+    url: `${backendDomain}/api/videos/trending`,
     method: "get",
   },
   uploadVideo: {
-    url: `${backendDomin}/api/videos/upload`,
+    url: `${backendDomain}/api/videos/upload`,
     method: "post"
   },
   getBlogs: {
-    url: `${backendDomin}/api/blogs`,
+    url: `${backendDomain}/api/blogs`,
     method: "get",
   },
   featuredBlogs: {
-    url: `${backendDomin}/api/blogs/featured`,
+    url: `${backendDomain}/api/blogs/featured`,
     method: "get"
   },
   createBlog: {
-    url: `${backendDomin}/api/blogs/create`,
+    url: `${backendDomain}/api/blogs/create`,
     method: "post"
   },
-  defaultUrl: backendDomin
+  defaultUrl: backendDomain
 };
 
 export default SummaryApi;
