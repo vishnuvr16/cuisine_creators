@@ -29,8 +29,8 @@ const Trending = () => {
 
   const fetchLatestVideos = async () => {
     try {
-      const response = await fetch(SummaryApi.getVideos.url,{
-        method: SummaryApi.getVideos.method,
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/videos`,{
+        method: "get",
         credentials: 'include'
       }); 
       if (!response.ok) {
